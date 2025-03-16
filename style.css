@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/sunny\ sky\ village.jpg);
+  background-repeat: no-repeat;
+  background-size: 200vh;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark-theme {
+  background-image: url(./img/moon\ sky\ village.jpg);
+  background-color: black;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.theme-toggle:hover {
+  background: #555;
+}
+.sky {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.house-container {
+  max-width: 700px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.sky {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+#cycleImg {
+  transform: scaleX(-1);
+}
+
+.cycle {
+  width: 400px;
+}
+
+.road {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.tree-container {
+  display: flex;
+  align-items: center;
+}
+
+.river {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  color: white;
+  background: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: rgba(4, 170, 109, 0.702);
+}
+.btn-green:hover {
+  background-color: rgb(4, 170, 109);
+}
+
+.btn-red {
+  background-color: rgba(242, 32, 32, 0.825);
+}
+.btn-red:hover {
+  background-color: rgba(247, 12, 12, 0.93);
+}

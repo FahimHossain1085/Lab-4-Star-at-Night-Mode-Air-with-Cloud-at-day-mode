@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="toggleTheme()" class="theme-toggle">Dark Theme/Light Theme</button>
+    <div class="home">
+        <div class="sky">
+
+        </div>
+        <div class="tree-container">
+            <button class="btn btn-green" onclick="document.getElementById('treeImg').src='./img/Yg6D.gif'">Move the
+                tree</button>
+            <img id="treeImg" src="./img/tree still.png" alt="" style="width: 300px;">
+            <button class="btn btn-red" onclick="document.getElementById('treeImg').src='./img/tree still.png'">Stop
+                moving the tree</button>
+        </div>
+        <div class="house-container"><img src="./img/house-village-city-atl-png.png" alt="" style="width: 600px;"></div>
+    </div>
+    <div class="road">
+        <div class="river">
+            <img id="riverImg" src="./img/river gif.gif" alt="">
+            <button class="btn btn-green" onclick="document.getElementById('riverImg').src='./img/river gif.gif'">River
+                flow on</button>
+            <button class="btn btn-red"
+                onclick="document.getElementById('riverImg').src='./img/river still png.png'">River flow off</button>
+        </div>
+        <div class="cycle">
+            <button class="btn btn-green" onclick="document.getElementById('cycleImg').src='./img/cycle gif.gif'">Cycle
+                On</button>
+            <button class="btn btn-red" onclick="document.getElementById('cycleImg').src='./img/cycle still.png'">Cycle
+                off</button>
+            <img id="cycleImg" src="./img/cycle still.png" alt="">
+        </div>
+    </div>
+    <script src="./app.js">
+
+    </script>
+</body>
+
+</html>
